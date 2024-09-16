@@ -14,7 +14,7 @@ public class ContactService
             if (!_contacts.Any(x => x.Email == contactPerson.Email))
             {
                 _contacts.Add(contactPerson);
-                return new ResponseResult { Succeeded = true, Message = "Contact Person was added successfully"};
+                return new ResponseResult { Succeeded = true, Message = "Contact Person was added successfully!"};
             }
             return new ResponseResult { Succeeded = false, Message = "A Contact Person with the same e-mail address already exists." };
         }
